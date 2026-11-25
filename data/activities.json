@@ -1,0 +1,31 @@
+[
+  {
+    "id": "stage", "venue": "hikr", "place": "HiKR Ground · 2F", "title": "Make a K-pop stage video",
+    "description": "Choose a set on the second floor and record a short performance together.",
+    "goals": ["stage", "photo"], "location": "stage", "access": "unverified",
+    "question": "Is the second-floor stage available now? How long is the wait to film?",
+    "korean": "지금 2층 무대에서 촬영할 수 있나요? 촬영하려면 몇 분 정도 기다려야 하나요?",
+    "source": "https://english.visitkorea.or.kr/svc/sp/hikr", "sourceLabel": "Korea Tourism Organization",
+    "hoursSource": "https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=31124",
+    "checked": "2026-11-25"
+  },
+  {
+    "id": "booth", "venue": "hikr", "place": "HiKR Ground · 3F", "title": "Take a photo at HiKR Street",
+    "description": "The third-floor street set has a replica bus stop where you can take a photo together.",
+    "goals": ["photo"], "location": "booth", "access": "unverified",
+    "question": "Can we use the bus-stop photo spot on the third floor now? Is there a wait?",
+    "korean": "지금 3층 버스 정류장 포토존에서 사진을 찍을 수 있나요? 대기가 있나요?",
+    "source": "https://mediahub.seoul.go.kr/archives/2018903", "sourceLabel": "Seoul Metropolitan Government",
+    "hoursSource": "https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=31124",
+    "checked": "2026-11-25"
+  },
+  {
+    "id": "stream", "venue": "stream", "place": "Cheonggyecheon · Gwanggyo", "title": "Walk beside Cheonggyecheon",
+    "description": "Use the Gwanggyo stair entrance for a short walk by the water. Check stream access before going down.",
+    "goals": ["walk"], "location": "bridge", "access": "stairs",
+    "question": "Is the Gwanggyo stair entrance to the stream open today?",
+    "korean": "지금 청계천 광교 계단 진입로로 내려갈 수 있나요? 통제 중인 구간이 있나요?",
+    "source": "https://www.sisul.or.kr/open_content/cheonggye/enjoy/way.jsp", "sourceLabel": "Seoul Facilities Corporation",
+    "hoursSource": "https://www.sisul.or.kr/open_content/cheonggye/", "checked": "2026-11-25"
+  }
+]
