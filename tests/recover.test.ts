@@ -102,7 +102,7 @@ test("infeasible return also excludes an otherwise open activity", () =>
     ).pick,
     null,
   ));
-test("unknown wait reaching the time limit still allows no activity", () =>
+test("a reported wait reaching the deadline leaves no time for the activity", () =>
   assert.equal(
     event(
       { kind: "wait", id: "stage", minutes: 40 },
@@ -110,6 +110,28 @@ test("unknown wait reaching the time limit still allows no activity", () =>
     ).pick,
     null,
   ));
+test("a wait ending at the deadline stays excluded after expiry until replaced", () => {
+  const plan: Plan = { ...demo.plan, goal: "stage" };
+  const initial = event({ kind: "wait", id: "stage", minutes: 40 }, plan);
+  for (const clock of ["15:00:00", "15:01:00"]) {
+    const refreshed = live("2026-11-27T" + clock, plan, initial.observations);
+    assert.equal(refreshed.pick, null);
+    assert.match(refreshed.reasons.join(" "), /15:30/);
+  }
+  const revised = recover(
+    {
+      ...demo,
+      mode: "today",
+      plan,
+      observations: initial.observations,
+      event: { kind: "wait", id: "stage", minutes: 5 },
+    },
+    new Date("2026-11-27T15:01:00+09:00"),
+  );
+  assert.equal(revised.pick?.card.id, "stage");
+  assert.equal(revised.pick?.status, "check");
+  assert.equal(revised.observations.length, 1);
+});
 test("published Monday closure follows Seoul date", () =>
   assert.equal(live("2026-11-30T14:50:00").pick, null));
 test("before opening, wait for opening is part of the calculation", () => {

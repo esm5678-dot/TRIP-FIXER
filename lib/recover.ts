@@ -87,6 +87,13 @@ function assess(
     const reported = toMinutes(clockDate(new Date(row.at)).time);
     knownWait =
       row.event.kind === "wait" ? row.event.minutes : row.event.times.wait;
+    if (knownWait !== null && reported + knownWait === deadline)
+      return result(
+        "excluded",
+        "The reported wait ends at your " +
+          plan.timing.time +
+          " return, leaving no time for the activity.",
+      );
     if (knownWait !== null && reported + knownWait > deadline)
       return result(
         "excluded",
