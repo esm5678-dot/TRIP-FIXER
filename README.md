@@ -4,6 +4,8 @@
 
 [실행 중인 리허설](https://trip-fixer-rehearsal.vercel.app)
 
+[최종 설계·기술 선택·14시간 현장 제작·배포 검수](docs/final/README.md)
+
 ![데스크톱 목표 선택과 휴대폰에서 3층 포토존을 확인하는 실제 화면](docs/demo-preview.jpg)
 
 ## 40초 체험
