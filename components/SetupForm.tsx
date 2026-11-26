@@ -13,6 +13,7 @@ import {
 } from "lucide-react";
 import { goalLabels, goals, locations } from "../lib/contracts";
 import type { Goal, Interpretation, Mode, Place, Plan } from "../lib/contracts";
+import { useText } from "./language";
 import { readNote } from "./session";
 const icons = { photo: Camera, stage: Clapperboard, walk: Footprints };
 const hints = {
@@ -36,6 +37,7 @@ export function SetupForm({
   onDemo: () => void;
   onCancel?(): void;
 }) {
+  const t = useText();
   const [plan, setPlan] = useState<Plan>(initial);
   const [note, setNote] = useState(""),
     [reading, setReading] = useState(false),
@@ -75,9 +77,9 @@ export function SetupForm({
         <div>
           <p className="eyebrow">
             <span className="dot" />{" "}
-            {mode === "demo" ? "Demo plan" : "Your plan"}
+            {mode === "demo" ? t("Demo plan") : t("Your plan")}
           </p>
-          <h2 id="setup-title">What do you want to keep?</h2>
+          <h2 id="setup-title">{t("What do you want to keep?")}</h2>
         </div>
       </div>
       <form
@@ -87,7 +89,7 @@ export function SetupForm({
         }}
       >
         <fieldset className="goal-list">
-          <legend className="sr">Experience to keep</legend>
+          <legend className="sr">{t("Experience to keep")}</legend>
           {goals.map((g) => {
             const Icon = icons[g];
             return (
@@ -103,8 +105,8 @@ export function SetupForm({
                 />
                 <Icon size={23} aria-hidden="true" />
                 <span>
-                  <strong>{goalLabels[g]}</strong>
-                  <small>{hints[g]}</small>
+                  <strong>{t(goalLabels[g])}</strong>
+                  <small>{t(hints[g])}</small>
                 </span>
                 <span className="radio-mark">
                   {plan.goal === g && <Check size={13} />}
@@ -120,16 +122,16 @@ export function SetupForm({
               checked={plan.preferStage}
               onChange={(e) => update({ preferStage: e.target.checked })}
             />{" "}
-            I'd prefer a K-pop setting if it fits.
+            {t("I'd prefer a K-pop setting if it fits.")}
           </label>
         )}
         <details className="note">
           <summary>
-            <MessageSquare size={16} /> Describe it in your own words{" "}
+            <MessageSquare size={16} /> {t("Describe it in your own words")}{" "}
             <ChevronDown size={15} />
           </summary>
           <label className="input-label" htmlFor="note">
-            Your travel note · optional
+            {t("Your travel note · optional")}
           </label>
           <textarea
             id="note"
@@ -137,7 +139,7 @@ export function SetupForm({
             rows={2}
             value={note}
             disabled={reading}
-            placeholder="We want a photo together, ideally on a K-pop set."
+            placeholder={t("We want a photo together, ideally on a K-pop set.")}
             onChange={(e) => {
               setNote(e.target.value);
               setSuggestion(null);
@@ -145,8 +147,9 @@ export function SetupForm({
             }}
           />
           <p className="fine">
-            Only send your travel preference. An enabled note reader sends this
-            text to OpenAI.
+            {t(
+              "Only send your travel preference. An enabled note reader sends this text to OpenAI.",
+            )}
           </p>
           <button
             type="button"
@@ -155,26 +158,30 @@ export function SetupForm({
             onClick={analyze}
           >
             <Sparkles size={15} />
-            {reading ? "Reading…" : "Read my note"}
+            {reading ? t("Reading…") : t("Read my note")}
           </button>
           {message && (
             <p role="status" className="notice">
-              {message}
+              {t(message)}
             </p>
           )}
           {suggestion && suggestion.goal !== "clarify" && (
             <div className="notice" role="status">
-              <strong>Suggested goal · {goalLabels[suggestion.goal]}</strong>
+              <strong>
+                {t("Suggested goal · {0}", t(goalLabels[suggestion.goal]))}
+              </strong>
               <p>
-                {suggestion.preferStage ? "K-pop setting preferred. " : ""}
-                {suggestion.stepFree ? "Step-free access requested." : ""}
+                {suggestion.preferStage
+                  ? t("K-pop setting preferred.") + " "
+                  : ""}
+                {suggestion.stepFree ? t("Step-free access requested.") : ""}
               </p>
               <button
                 type="button"
                 className="text-button"
                 onClick={() => accept(suggestion)}
               >
-                Use this suggestion <ArrowRight size={15} />
+                {t("Use this suggestion")} <ArrowRight size={15} />
               </button>
             </div>
           )}
@@ -182,14 +189,16 @@ export function SetupForm({
         <div className="field-grid">
           {(["origin", "meet"] as const).map((field) => (
             <label key={field} className="input-label">
-              {field === "origin" ? "Starting from" : "I need to return to"}
+              {field === "origin"
+                ? t("Starting from")
+                : t("I need to return to")}
               <select
                 value={plan[field]}
                 onChange={(e) => update({ [field]: e.target.value as Place })}
               >
                 {Object.entries(locations).map(([id, title]) => (
                   <option key={id} value={id}>
-                    {title}
+                    {t(title)}
                   </option>
                 ))}
               </select>
@@ -197,7 +206,7 @@ export function SetupForm({
           ))}
         </div>
         <fieldset className="timing">
-          <legend>When do you need to be back?</legend>
+          <legend>{t("When do you need to be back?")}</legend>
           <div className="segments">
             {([30, 60, 90] as const).map((n) => (
               <button
@@ -210,7 +219,7 @@ export function SetupForm({
                   update({ timing: { kind: "budget", minutes: n } })
                 }
               >
-                {n} min
+                {t("{0} min", n)}
               </button>
             ))}
             <button
@@ -226,12 +235,12 @@ export function SetupForm({
                 })
               }
             >
-              Set a time
+              {t("Set a time")}
             </button>
           </div>
           {plan.timing.kind === "clock" && (
             <label className="input-label clock">
-              Return time in Seoul{" "}
+              {t("Return time in Seoul")}{" "}
               <input
                 required
                 type="time"
@@ -249,20 +258,20 @@ export function SetupForm({
             checked={plan.stepFree}
             onChange={(e) => update({ stepFree: e.target.checked })}
           />{" "}
-          I need a step-free route.
+          {t("I need a step-free route.")}
         </label>
         <button type="submit" className="primary" disabled={busy || reading}>
-          {busy ? "Checking your plan…" : "Find my next move"}
+          {busy ? t("Checking your plan…") : t("Find my next move")}
           <ArrowRight size={20} />
         </button>
       </form>
       {onCancel ? (
         <button className="demo-link" onClick={onCancel} disabled={busy}>
-          Back to my current plan
+          {t("Back to my current plan")}
         </button>
       ) : (
         <button className="demo-link" disabled={busy} onClick={onDemo}>
-          <Play size={15} /> Try the 14:50 demo
+          <Play size={15} /> {t("Try the 14:50 demo")}
         </button>
       )}
     </section>

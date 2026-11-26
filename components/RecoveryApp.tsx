@@ -2,6 +2,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { ArrowUpRight, Compass, MapPin } from "lucide-react";
 import type { EvaluateRequest, Event, Plan, Result } from "../lib/contracts";
+import { LanguageContext, languages, useText, type Language } from "./language";
 import { SetupForm } from "./SetupForm";
 import { ResultCard } from "./ResultCard";
 import { demoPlan, evaluate, initialPlan, save, storedPlan } from "./session";
@@ -13,6 +14,37 @@ const asQuery = (r: Result): Query => ({
   observations: r.observations,
 });
 export function RecoveryApp() {
+  const [language, setLanguage] = useState<Language>("en");
+  function changeLanguage(next: Language) {
+    setLanguage(next);
+    document.documentElement.lang = next;
+    try {
+      localStorage.setItem("tripfixer-language", next);
+    } catch {}
+  }
+  useEffect(() => {
+    try {
+      const saved = localStorage.getItem("tripfixer-language");
+      if (saved && Object.hasOwn(languages, saved)) {
+        setLanguage(saved as Language);
+        document.documentElement.lang = saved;
+      }
+    } catch {}
+  }, []);
+  return (
+    <LanguageContext.Provider value={language}>
+      <TripScreen language={language} changeLanguage={changeLanguage} />
+    </LanguageContext.Provider>
+  );
+}
+function TripScreen({
+  language,
+  changeLanguage,
+}: {
+  language: Language;
+  changeLanguage: (next: Language) => void;
+}) {
+  const t = useText();
   const [result, setResult] = useState<Result | null>(null),
     [editing, setEditing] = useState(false),
     [busy, setBusy] = useState(false),
@@ -50,7 +82,7 @@ export function RecoveryApp() {
         setError(
           e instanceof Error && e.name !== "TypeError"
             ? e.message
-            : "Connection lost. Your last plan is still here.",
+            : t("Connection lost. Your last plan is still here."),
         );
       } finally {
         if (id === seq.current) {
@@ -143,34 +175,58 @@ export function RecoveryApp() {
           </span>
           tripfixer<span className="brand-period">.</span>
         </div>
-        <span className="mast-location">
-          <MapPin size={15} /> Seoul, South Korea
-        </span>
+        <div className="mast-tools">
+          <label className="language">
+            <span>{t("Language")}</span>
+            <select
+              value={language}
+              onChange={(e) => changeLanguage(e.target.value as Language)}
+            >
+              {Object.entries(languages).map(([id, name]) => (
+                <option lang={id} key={id} value={id}>
+                  {name}
+                </option>
+              ))}
+            </select>
+          </label>
+          <span className="mast-location">
+            <MapPin size={15} /> {t("Seoul, South Korea")}
+          </span>
+        </div>
       </header>
       <main className="main-grid">
-        <aside className="intro" aria-label="About Trip Fixer">
+        <aside className="intro" aria-label={t("About Trip Fixer")}>
           <p className="eyebrow area">
-            <span className="line" /> Seoul field guide
+            <span className="line" /> {t("Seoul field guide")}
           </p>
           <h1>
-            Keep the <em>best part</em> <br />
-            of your day.
+            {language === "en" ? (
+              <>
+                Keep the <em>best part</em> <br />
+                of your day.
+              </>
+            ) : (
+              t("Keep the best part of your day.")
+            )}
           </h1>
           <p className="lead">
-            A queue or a closed door can change your plans. Find another way to
-            do what you came for, and make it back on time.
+            {t(
+              "A queue or a closed door can change your plans. Find another way to do what you came for, and make it back on time.",
+            )}
           </p>
           <figure className="postcard">
             <img
               src="/cheonggyecheon.jpg"
               width="453"
               height="316"
-              alt="Water spilling over a low cascade at Cheonggyecheon in Seoul"
+              alt={t(
+                "Water spilling over a low cascade at Cheonggyecheon in Seoul",
+              )}
             />
             <figcaption>
               <div>
-                <span className="eyebrow">Covered area</span>
-                <strong>HiKR Ground &amp; Cheonggyecheon</strong>
+                <span className="eyebrow">{t("Covered area")}</span>
+                <strong>{t("HiKR Ground & Cheonggyecheon")}</strong>
               </div>
               <MapPin size={20} />
             </figcaption>
@@ -179,8 +235,10 @@ export function RecoveryApp() {
         <div className="workspace" aria-busy={busy}>
           {error && (
             <div role="alert" className="error">
-              {error}{" "}
-              <button onClick={() => retry.current?.()}>Try again</button>
+              {t(error)}{" "}
+              <button onClick={() => retry.current?.()}>
+                {t("Try again")}
+              </button>
             </div>
           )}
           {showResult && result ? (
@@ -213,13 +271,13 @@ export function RecoveryApp() {
         </div>
       </main>
       <footer className="page-footer">
-        <span>Trip Fixer · Seoul rehearsal edition</span>
+        <span>{t("Trip Fixer · Seoul rehearsal edition")}</span>
         <a
           href="https://commons.wikimedia.org/wiki/File:Cheonggyecheonview.jpg"
           target="_blank"
           rel="noreferrer"
         >
-          Photograph by Salalucio <ArrowUpRight size={12} />
+          {t("Photograph by Salalucio")} <ArrowUpRight size={12} />
         </a>
       </footer>
     </div>

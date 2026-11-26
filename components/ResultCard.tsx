@@ -13,6 +13,7 @@ import {
   Pencil,
   Undo2,
 } from "lucide-react";
+import { useText, translateReason } from "./language";
 import { goalLabels, locations } from "../lib/contracts";
 import type { Event, Result } from "../lib/contracts";
 
@@ -34,6 +35,7 @@ function TimingForm({
   busy: boolean;
   onEvent: Props["onEvent"];
 }) {
+  const t = useText();
   const pick = value.pick;
   if (!pick) return null;
   const labels = {
@@ -45,10 +47,10 @@ function TimingForm({
   return (
     <details className="note verification">
       <summary>
-        <Clock3 size={16} /> I checked the timing
+        <Clock3 size={16} /> {t("I checked the timing")}
       </summary>
       <p className="fine">
-        Enter today's estimates in minutes. Include all four parts.
+        {t("Enter today's estimates in minutes. Include all four parts.")}
       </p>
       <form
         onSubmit={(e) => {
@@ -71,7 +73,7 @@ function TimingForm({
         <div className="field-grid">
           {(Object.keys(labels) as (keyof typeof labels)[]).map((k) => (
             <label key={k} className="input-label">
-              {labels[k]}
+              {t(labels[k])}
               <input
                 name={k}
                 type="number"
@@ -85,17 +87,17 @@ function TimingForm({
           ))}
         </div>
         <label className="check">
-          <input required type="checkbox" /> I checked that this activity is
-          available.
+          <input required type="checkbox" />{" "}
+          {t("I checked that this activity is available.")}
         </label>
         {value.plan.stepFree && (
           <label className="check">
-            <input name="accessible" type="checkbox" /> The complete route is
-            step-free.
+            <input name="accessible" type="checkbox" />{" "}
+            {t("The complete route is step-free.")}
           </label>
         )}
         <button className="secondary" disabled={busy} type="submit">
-          Check my return time <ArrowRight size={16} />
+          {t("Check my return time")} <ArrowRight size={16} />
         </button>
       </form>
     </details>
@@ -111,6 +113,7 @@ export function ResultCard({
   onEdit,
   onEnd,
 }: Props) {
+  const t = useText();
   const [action, setAction] = useState<"staff" | "wait" | "closed" | null>(
     null,
   );
@@ -141,31 +144,36 @@ export function ResultCard({
       <div className="result-head">
         <p className="eyebrow">
           <span className="dot" />
-          {value.mode === "demo" ? "Demo · 14:50 Seoul" : "Your next move"}
+          {value.mode === "demo"
+            ? t("Demo · 14:50 Seoul")
+            : t("Your next move")}
         </p>
         <button className="icon-text" onClick={onEdit} disabled={busy}>
           <Pencil size={14} />
-          Edit plan
+          {t("Edit plan")}
         </button>
       </div>
       <div className="receipt">
         <span>
           <Flag size={15} />
-          {goalLabels[plan.goal]}
+          {t(goalLabels[plan.goal])}
         </span>
         <span>
           <Clock3 size={15} />
-          {value.remaining} min left
+          {t("{0} min left", value.remaining)}
         </span>
       </div>
       <p className="meeting">
-        Back at <strong>{locations[plan.meet]}</strong> by{" "}
-        <strong>{plan.timing.time}</strong>, Seoul time.
+        {t(
+          "Back at {0} by {1}, Seoul time.",
+          t(locations[plan.meet]),
+          plan.timing.time,
+        )}
       </p>
       {value.previousReason && (
         <div className="change-note" role="status">
-          <strong>Why your plan changed</strong>
-          <p>{value.previousReason}</p>
+          <strong>{t("Why your plan changed")}</strong>
+          <p>{translateReason(value.previousReason, t)}</p>
         </div>
       )}
       {pick ? (
@@ -180,25 +188,25 @@ export function ResultCard({
                 <Clock3 size={13} />
               )}{" "}
               {pick.status === "ready"
-                ? "Fits your estimates"
-                : "Check on site"}
+                ? t("Fits your estimates")
+                : t("Check on site")}
             </span>
           </div>
           <h2 id="result-title" tabIndex={-1}>
-            {pick.card.title}
+            {t(pick.card.title)}
           </h2>
           <p className="place">
             <MapPin size={16} />
-            {pick.card.place}
+            {t(pick.card.place)}
           </p>
-          <p className="description">{pick.card.description}</p>
+          <p className="description">{t(pick.card.description)}</p>
           <div className="time-note">
             <strong>
               {pick.returnAt
-                ? "Estimated return · " + pick.returnAt
-                : "Timing to confirm"}
+                ? t("Estimated return · {0}", pick.returnAt)
+                : t("Timing to confirm")}
             </strong>
-            <p>{pick.reason}</p>
+            <p>{translateReason(pick.reason, t)}</p>
           </div>
           <button
             className="primary"
@@ -207,14 +215,14 @@ export function ResultCard({
             onClick={() => toggle("staff")}
           >
             <Languages size={19} />
-            Ask staff
+            {t("Ask staff")}
             <ArrowRight className="push" size={19} />
           </button>
           {action === "staff" && (
             <div className="staff">
-              <span className="eyebrow">Show this to staff</span>
+              <span className="eyebrow">{t("Show this to staff")}</span>
               <p lang="ko">{pick.card.korean}</p>
-              <small>{pick.card.question}</small>
+              <small>{t(pick.card.question)}</small>
             </div>
           )}
           <div className="actions">
@@ -223,25 +231,25 @@ export function ResultCard({
               aria-expanded={action === "wait"}
               onClick={() => toggle("wait")}
             >
-              <Clock3 size={16} /> Long wait
+              <Clock3 size={16} /> {t("Long wait")}
             </button>
             <button
               disabled={busy}
               onClick={() => send({ kind: "skip", id: pick.card.id })}
             >
-              <Forward size={16} /> Skip this activity
+              <Forward size={16} /> {t("Skip this activity")}
             </button>
             <button
               disabled={busy}
               aria-expanded={action === "closed"}
               onClick={() => toggle("closed")}
             >
-              <DoorClosed size={16} /> Closed
+              <DoorClosed size={16} /> {t("Closed")}
             </button>
           </div>
           {action === "wait" && (
             <fieldset className="choice-box">
-              <legend>What wait were you told?</legend>
+              <legend>{t("What wait were you told?")}</legend>
               <div className="segments">
                 {[15, 30, 45].map((n) => (
                   <button
@@ -251,7 +259,7 @@ export function ResultCard({
                       send({ kind: "wait", id: pick.card.id, minutes: n })
                     }
                   >
-                    {n} min
+                    {t("{0} min", n)}
                   </button>
                 ))}
                 <button
@@ -260,20 +268,20 @@ export function ResultCard({
                     send({ kind: "wait", id: pick.card.id, minutes: null })
                   }
                 >
-                  Not sure
+                  {t("Not sure")}
                 </button>
               </div>
             </fieldset>
           )}
           {action === "closed" && (
             <div className="choice-box">
-              <strong>What is closed?</strong>
+              <strong>{t("What is closed?")}</strong>
               <div className="segments">
                 <button
                   disabled={busy}
                   onClick={() => send({ kind: "closed", id: pick.card.id })}
                 >
-                  Just this activity
+                  {t("Just this activity")}
                 </button>
                 <button
                   disabled={busy}
@@ -285,8 +293,8 @@ export function ResultCard({
                   }
                 >
                   {pick.card.venue === "hikr"
-                    ? "All of HiKR Ground"
-                    : "The stream area"}
+                    ? t("All of HiKR Ground")
+                    : t("The stream area")}
                 </button>
               </div>
             </div>
@@ -294,12 +302,12 @@ export function ResultCard({
           <TimingForm value={value} busy={busy} onEvent={send} />
           <div className="sources">
             <a href={pick.card.source} rel="noreferrer" target="_blank">
-              {pick.card.sourceLabel} <ArrowUpRight size={13} />
+              {t(pick.card.sourceLabel)} <ArrowUpRight size={13} />
             </a>
             <a href={pick.card.hoursSource} rel="noreferrer" target="_blank">
               {pick.card.venue === "stream"
-                ? "Access notices"
-                : "Published hours"}{" "}
+                ? t("Access notices")
+                : t("Published hours")}{" "}
               <ArrowUpRight size={13} />
             </a>
           </div>
@@ -308,18 +316,22 @@ export function ResultCard({
         <article className="empty">
           <Flag size={32} />
           <h2 id="result-title" tabIndex={-1}>
-            {value.expired ? "Time to head back" : "No match for this goal"}
+            {value.expired
+              ? t("Time to head back")
+              : t("No match for this goal")}
           </h2>
           <p>
             {value.expired
-              ? "Your planned return time has arrived."
-              : "The reviewed activities cannot meet the goal and constraints you selected."}
+              ? t("Your planned return time has arrived.")
+              : t(
+                  "The reviewed activities cannot meet the goal and constraints you selected.",
+                )}
           </p>
           {value.reasons
             .filter((x) => x !== value.previousReason)
             .map((r) => (
               <p className="fine" key={r}>
-                {r}
+                {translateReason(r, t)}
               </p>
             ))}
           <a
@@ -331,17 +343,20 @@ export function ResultCard({
             target="_blank"
             rel="noreferrer"
           >
-            Find the meeting place <ArrowUpRight size={18} />
+            {t("Find the meeting place")} <ArrowUpRight size={18} />
           </a>
           <p className="fine">
-            Meet at {locations[plan.meet]}. The map opens the location search.
+            {t(
+              "Meet at {0}. The map opens the location search.",
+              t(locations[plan.meet]),
+            )}
           </p>
         </article>
       )}
       {reports.length > 0 && (
         <details className="note observations">
           <summary>
-            <Clock3 size={16} /> My timing reports
+            <Clock3 size={16} /> {t("My timing reports")}
           </summary>
           {reports.map((row) => {
             const ev = row.event;
@@ -350,14 +365,20 @@ export function ResultCard({
             return (
               <section key={ev.id} className="report">
                 <strong>
-                  {labels[ev.id]} · {localTime(row.at)} Seoul
+                  {t("{0} · {1} Seoul", t(labels[ev.id]), localTime(row.at))}
                 </strong>
                 <p className="fine">
                   {total
-                    ? `Go ${total.outward} + wait ${total.wait} + activity ${total.visit} + return ${total.back} min.`
+                    ? t(
+                        "Go {0} + wait {1} + activity {2} + return {3} min.",
+                        total.outward,
+                        total.wait,
+                        total.visit,
+                        total.back,
+                      )
                     : ev.kind === "wait" && ev.minutes !== null
-                      ? `Reported wait: ${ev.minutes} min.`
-                      : "Wait unknown."}
+                      ? t("Reported wait: {0} min.", ev.minutes)
+                      : t("Wait unknown.")}
                 </p>
                 <form
                   onSubmit={(e) => {
@@ -371,10 +392,10 @@ export function ResultCard({
                   }}
                 >
                   <label className="input-label">
-                    New wait in minutes{" "}
+                    {t("New wait in minutes")}{" "}
                     <input
                       name="revised"
-                      aria-label={"New wait for " + labels[ev.id]}
+                      aria-label={t("New wait for {0}", t(labels[ev.id]))}
                       type="number"
                       min="0"
                       max="720"
@@ -383,7 +404,7 @@ export function ResultCard({
                     />
                   </label>
                   <button className="text-button" type="submit" disabled={busy}>
-                    Update wait <ArrowRight size={15} />
+                    {t("Update wait")} <ArrowRight size={15} />
                   </button>
                 </form>
               </section>
@@ -398,10 +419,10 @@ export function ResultCard({
           onClick={onUndo}
         >
           <Undo2 size={16} />
-          Undo last change
+          {t("Undo last change")}
         </button>
         <button className="icon-text" disabled={busy} onClick={onEnd}>
-          End trip
+          {t("End trip")}
         </button>
       </div>
     </section>

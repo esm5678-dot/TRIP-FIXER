@@ -725,3 +725,10 @@ textarea {
 .report .text-button {
   min-height: 37px;
 }
+
+.mast-tools, .language { display: flex; align-items: center; gap: .6rem; }
+.mast-tools { gap: 1rem; }
+.language { font-size: .85rem; }
+.language select { width: auto; min-height: 40px; padding: .35rem .5rem; font: inherit; }
+:lang(ja) h1, :lang(zh-Hans) h1 { line-height: 1.2; letter-spacing: -.025em; }
+@media (max-width: 700px) { .mast-tools .mast-location { display: none; } .language { gap: .25rem; } }
