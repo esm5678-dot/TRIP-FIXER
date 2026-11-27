@@ -4,7 +4,7 @@
 
 [실행 중인 리허설](https://trip-fixer-rehearsal.vercel.app)
 
-[최종 설계·기술 선택·14시간 현장 제작·배포 검수](docs/final/README.md)
+[GitHub 사례와 현재 코드에 근거한 모바일 설계](docs/final/MOBILE-DESIGN-KO.md) · [최종 설계·기술 선택·14시간 현장 제작·배포 검수](docs/final/README.md)
 
 휴대폰에서는 첫 화면에서 지키고 싶은 경험을 고르고, 다음 화면에서 출발지·복귀 장소·시간을 정한다. 이전 단계로 돌아가도 입력값이 유지된다.
 
