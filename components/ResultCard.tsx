@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import {
   ArrowRight,
   ArrowUpRight,
@@ -13,7 +13,7 @@ import {
   Pencil,
   Undo2,
 } from "lucide-react";
-import { useText, translateReason } from "./language";
+import { LanguageContext, useText, translateReason } from "./language";
 import { goalLabels, locations } from "../lib/contracts";
 import type { Event, Result } from "../lib/contracts";
 
@@ -113,6 +113,7 @@ export function ResultCard({
   onEdit,
   onEnd,
 }: Props) {
+  const language = useContext(LanguageContext);
   const t = useText();
   const [action, setAction] = useState<"staff" | "wait" | "closed" | null>(
     null,
@@ -222,7 +223,7 @@ export function ResultCard({
             <div className="staff">
               <span className="eyebrow">{t("Show this to staff")}</span>
               <p lang="ko">{pick.card.korean}</p>
-              <small>{t(pick.card.question)}</small>
+              {language !== "ko" && <small>{t(pick.card.question)}</small>}
             </div>
           )}
           <div className="actions">

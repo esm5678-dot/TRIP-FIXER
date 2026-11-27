@@ -2,7 +2,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { ArrowUpRight, Compass, MapPin } from "lucide-react";
 import type { EvaluateRequest, Event, Plan, Result } from "../lib/contracts";
-import { LanguageContext, languages, useText, type Language } from "./language";
+import { LanguageContext, defaultLanguage, languages, useText, type Language } from "./language";
 import { SetupForm } from "./SetupForm";
 import { ResultCard } from "./ResultCard";
 import { demoPlan, evaluate, initialPlan, save, storedPlan } from "./session";
@@ -14,7 +14,7 @@ const asQuery = (r: Result): Query => ({
   observations: r.observations,
 });
 export function RecoveryApp() {
-  const [language, setLanguage] = useState<Language>("en");
+  const [language, setLanguage] = useState<Language>(defaultLanguage);
   function changeLanguage(next: Language) {
     setLanguage(next);
     document.documentElement.lang = next;
@@ -45,6 +45,10 @@ function TripScreen({
   changeLanguage: (next: Language) => void;
 }) {
   const t = useText();
+  const title = "Trip Fixer · " + t("Seoul field guide");
+  useEffect(() => {
+    document.title = title;
+  }, [title]);
   const [result, setResult] = useState<Result | null>(null),
     [editing, setEditing] = useState(false),
     [busy, setBusy] = useState(false),
@@ -82,7 +86,7 @@ function TripScreen({
         setError(
           e instanceof Error && e.name !== "TypeError"
             ? e.message
-            : t("Connection lost. Your last plan is still here."),
+            : "Connection lost. Your last plan is still here.",
         );
       } finally {
         if (id === seq.current) {

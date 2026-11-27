@@ -6,6 +6,7 @@ test("switch languages without losing draft choices, staff questions or the retu
   await page.goto("/");
   const language = page.locator(".language select");
   await expect(language.locator("option")).toHaveText([
+    "한국어",
     "English",
     "日本語",
     "简体中文",
@@ -29,7 +30,7 @@ test("switch languages without losing draft choices, staff questions or the retu
     page.getByText(/最早要到15:35才能开始，已超过15:30/),
   ).toBeVisible();
   await page.getByRole("button", { name: "询问工作人员" }).click();
-  await expect(page.locator("[lang=ko]")).toContainText("버스 정류장");
+  await expect(page.locator(".staff p[lang=ko]")).toContainText("버스 정류장");
   await language.selectOption("fr");
   await expect(page.getByText(/Peut-on prendre des photos/)).toBeVisible();
   await page.reload();
@@ -39,7 +40,20 @@ test("switch languages without losing draft choices, staff questions or the retu
   ).toBeVisible();
   await expect(page.locator(".meeting")).toContainText("15:30");
   await language.selectOption("en");
+  await expect(page.locator("html")).toHaveAttribute("lang", "en");
+  await page.reload();
+  await expect(language).toHaveValue("en");
   await expect(
     page.getByRole("heading", { name: "Take a photo at HiKR Street" }),
   ).toBeVisible();
+});
+
+test("an unsupported saved language falls back to Korean", async ({ page }) => {
+  await page.addInitScript(() => {
+    localStorage.setItem("tripfixer-language", "unsupported");
+  });
+  await page.goto("/");
+  await expect(page.locator("html")).toHaveAttribute("lang", "ko");
+  await expect(page.locator(".language select")).toHaveValue("ko");
+  await expect(page.getByRole("heading", { level: 2 })).toContainText(/[가-힣]/);
 });

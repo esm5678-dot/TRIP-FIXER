@@ -1,8 +1,8 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 export const metadata: Metadata = {
-  title: "Trip Fixer · Seoul field guide",
-  description: "Keep the experience you came for when your Seoul plans change.",
+  title: "Trip Fixer · 서울 현장 가이드",
+  description: "서울 여행 일정이 바뀌었을 때, 원하는 경험과 복귀 약속을 지킬 수 있는 다음 행동을 찾아보세요.",
 };
 export const viewport: Viewport = {
   width: "device-width",
@@ -15,7 +15,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="ko">
       <body>{children}</body>
     </html>
   );

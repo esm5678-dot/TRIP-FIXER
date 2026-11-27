@@ -5,6 +5,7 @@ for (const [width, language] of [
   [320, "fr"],
   [360, "zh-Hans"],
   [390, "en"],
+  [390, "ko"],
   [430, "ja"],
 ] as const) {
   test(`mobile setup and recovery at ${width}px in ${language}`, async ({
@@ -14,7 +15,16 @@ for (const [width, language] of [
       language === "en" ? key : translations[key][language];
     await page.setViewportSize({ width, height: 740 });
     await page.goto("/");
-    await page.locator(".language select").selectOption(language);
+    const languageSelect = page.locator(".language select");
+    if (language === "ko") {
+      await expect(languageSelect).toHaveValue("ko");
+      await expect(page.locator("html")).toHaveAttribute("lang", "ko");
+      await expect(
+        page.getByRole("heading", { name: t("What do you want to keep?") }),
+      ).toBeVisible();
+    } else {
+      await languageSelect.selectOption(language);
+    }
     const next = page.getByRole("button", { name: t("Choose return details") });
     await expect(next).toBeInViewport();
     await expect(page.getByLabel(t("Starting from"))).toBeHidden();
@@ -40,7 +50,7 @@ for (const [width, language] of [
       .getByRole("button", { name: t("{0} min").replace("{0}", "45") })
       .click();
     await page.getByRole("button", { name: t("Ask staff") }).click();
-    await expect(page.locator("[lang=ko]")).toContainText("버스 정류장");
+    await expect(page.locator(".staff p[lang=ko]")).toContainText("버스 정류장");
     expect(
       await page.evaluate(
         () => document.documentElement.scrollWidth <= innerWidth,

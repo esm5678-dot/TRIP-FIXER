@@ -11,8 +11,13 @@ async function shot(page: Page, name: string) {
     });
   }
 }
-async function demo(page: Page) {
+async function openInEnglish(page: Page) {
   await page.goto("/");
+  await page.locator(".language select").selectOption("en");
+  await expect(page.locator("html")).toHaveAttribute("lang", "en");
+}
+async function demo(page: Page) {
+  await openInEnglish(page);
   await page.getByRole("button", { name: "Try the 14:50 demo" }).click();
   await expect(
     page.getByRole("heading", { name: "Make a K-pop stage video" }),
@@ -25,7 +30,7 @@ async function wait45(page: Page) {
 test("desktop demo, two-tap wait, Korean help, reload, end", async ({
   page,
 }) => {
-  await page.goto("/");
+  await openInEnglish(page);
   await expect(
     page.getByRole("heading", { name: "What do you want to keep?" }),
   ).toBeVisible();
@@ -40,7 +45,7 @@ test("desktop demo, two-tap wait, Korean help, reload, end", async ({
   ).toBeVisible();
   await expect(page.getByText(/15:35, past your 15:30 return/)).toBeVisible();
   await page.getByRole("button", { name: "Ask staff" }).click();
-  await expect(page.locator("[lang=ko]")).toContainText("버스 정류장");
+  await expect(page.locator(".staff p[lang=ko]")).toContainText("버스 정류장");
   await shot(page, "02-recovered");
   await page.reload();
   await expect(
@@ -98,7 +103,7 @@ test("checked estimates, origin edit clears route-specific evidence", async ({
 });
 test("mobile whole-venue closure, undo and activity skip", async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 });
-  await page.goto("/");
+  await openInEnglish(page);
   await shot(page, "03-mobile");
   await page.getByRole("button", { name: "Try the 14:50 demo" }).click();
   await page.getByRole("button", { name: "Closed", exact: true }).click();
@@ -131,7 +136,7 @@ test("note needs confirmation and raw note never reaches session storage", async
       });
     await route.continue();
   });
-  await page.goto("/");
+  await openInEnglish(page);
   await page.getByText("Describe it in your own words").click();
   await page
     .getByLabel("Your travel note")

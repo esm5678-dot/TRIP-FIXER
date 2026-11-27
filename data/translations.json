@@ -2,771 +2,925 @@
   "Language": {
     "ja": "言語",
     "zh-Hans": "语言",
-    "fr": "Langue"
+    "fr": "Langue",
+    "ko": "언어"
   },
   "Seoul, South Korea": {
     "ja": "韓国・ソウル",
     "zh-Hans": "韩国首尔",
-    "fr": "Séoul, Corée du Sud"
+    "fr": "Séoul, Corée du Sud",
+    "ko": "대한민국 서울"
   },
   "About Trip Fixer": {
     "ja": "Trip Fixerについて",
     "zh-Hans": "关于 Trip Fixer",
-    "fr": "À propos de Trip Fixer"
+    "fr": "À propos de Trip Fixer",
+    "ko": "트립픽서 소개"
   },
   "Seoul field guide": {
     "ja": "ソウル現地ガイド",
     "zh-Hans": "首尔实地指南",
-    "fr": "Guide pratique de Séoul"
+    "fr": "Guide pratique de Séoul",
+    "ko": "서울 현장 가이드"
   },
   "Keep the best part of your day.": {
     "ja": "予定が変わっても、楽しみはそのまま。",
     "zh-Hans": "行程变了，也能留住最期待的体验。",
-    "fr": "Gardez le meilleur de votre journée."
+    "fr": "Gardez le meilleur de votre journée.",
+    "ko": "오늘 꼭 하고 싶은 일을 놓치지 마세요."
   },
   "A queue or a closed door can change your plans. Find another way to do what you came for, and make it back on time.": {
     "ja": "行列や休館で予定が変わったときも、やりたかったことを楽しみ、約束の時間に戻れる方法を探しましょう。",
     "zh-Hans": "遇到排队或临时关闭时，换个方式体验想做的事，按时回到约定地点。",
-    "fr": "Une file d’attente ou une fermeture change vos plans ? Retrouvez une façon de profiter de votre visite et de rentrer à temps."
+    "fr": "Une file d’attente ou une fermeture change vos plans ? Retrouvez une façon de profiter de votre visite et de rentrer à temps.",
+    "ko": "긴 줄이나 갑작스러운 휴관으로 일정이 틀어졌나요? 원했던 경험을 즐기고 약속 시간에 돌아갈 방법을 찾아보세요."
   },
   "Water spilling over a low cascade at Cheonggyecheon in Seoul": {
     "ja": "ソウルの清渓川にある小さな滝",
     "zh-Hans": "首尔清溪川的小瀑布",
-    "fr": "Petite cascade du Cheonggyecheon à Séoul"
+    "fr": "Petite cascade du Cheonggyecheon à Séoul",
+    "ko": "서울 청계천의 낮은 폭포를 따라 흐르는 물"
   },
   "Covered area": {
     "ja": "対象エリア",
     "zh-Hans": "覆盖区域",
-    "fr": "Secteur couvert"
+    "fr": "Secteur couvert",
+    "ko": "안내 지역"
   },
   "HiKR Ground & Cheonggyecheon": {
     "ja": "HiKR Groundと清渓川",
     "zh-Hans": "HiKR Ground 和清溪川",
-    "fr": "HiKR Ground et Cheonggyecheon"
+    "fr": "HiKR Ground et Cheonggyecheon",
+    "ko": "하이커 그라운드와 청계천"
   },
   "Try again": {
     "ja": "再試行",
     "zh-Hans": "重试",
-    "fr": "Réessayer"
+    "fr": "Réessayer",
+    "ko": "다시 시도"
   },
   "Trip Fixer · Seoul rehearsal edition": {
     "ja": "Trip Fixer · ソウル試用版",
     "zh-Hans": "Trip Fixer · 首尔演示版",
-    "fr": "Trip Fixer · Version de démonstration de Séoul"
+    "fr": "Trip Fixer · Version de démonstration de Séoul",
+    "ko": "트립픽서 · 서울 시연판"
   },
   "Photograph by Salalucio": {
     "ja": "写真：Salalucio",
     "zh-Hans": "摄影：Salalucio",
-    "fr": "Photo de Salalucio"
+    "fr": "Photo de Salalucio",
+    "ko": "사진 제공 · Salalucio"
   },
   "Demo plan": {
     "ja": "デモプラン",
     "zh-Hans": "演示计划",
-    "fr": "Plan de démonstration"
+    "fr": "Plan de démonstration",
+    "ko": "시연 일정"
   },
   "Your plan": {
     "ja": "あなたのプラン",
     "zh-Hans": "你的计划",
-    "fr": "Votre programme"
+    "fr": "Votre programme",
+    "ko": "내 일정"
   },
   "What do you want to keep?": {
     "ja": "一番やりたいことは？",
     "zh-Hans": "你最想保留哪项体验？",
-    "fr": "À quelle expérience tenez-vous ?"
+    "fr": "À quelle expérience tenez-vous ?",
+    "ko": "오늘 꼭 하고 싶은 일은?"
   },
   "Experience to keep": {
     "ja": "残したい体験",
     "zh-Hans": "想保留的体验",
-    "fr": "Expérience à préserver"
+    "fr": "Expérience à préserver",
+    "ko": "꼭 하고 싶은 경험"
   },
   "A photo together": {
     "ja": "一緒に写真を撮る",
     "zh-Hans": "一起合影",
-    "fr": "Une photo ensemble"
+    "fr": "Une photo ensemble",
+    "ko": "함께 사진 찍기"
   },
   "A K-pop stage video": {
     "ja": "K-popのステージ動画を撮る",
     "zh-Hans": "拍摄 K-pop 舞台视频",
-    "fr": "Une vidéo sur une scène de K-pop"
+    "fr": "Une vidéo sur une scène de K-pop",
+    "ko": "K-pop 무대 영상 찍기"
   },
   "A walk by the stream": {
     "ja": "川沿いを散歩する",
     "zh-Hans": "沿溪散步",
-    "fr": "Une balade au bord de l’eau"
+    "fr": "Une balade au bord de l’eau",
+    "ko": "물길 따라 산책하기"
   },
   "Keep a memory with friends": {
     "ja": "友達との思い出を残す",
     "zh-Hans": "和朋友留下回忆",
-    "fr": "Un souvenir entre amis"
+    "fr": "Un souvenir entre amis",
+    "ko": "친구와 추억을 남겨요"
   },
   "Film a performance on set": {
     "ja": "セットでパフォーマンスを撮影",
     "zh-Hans": "在布景中拍摄表演",
-    "fr": "Filmer une prestation sur le plateau"
+    "fr": "Filmer une prestation sur le plateau",
+    "ko": "무대 세트에서 공연을 촬영해요"
   },
   "Get outside by the water": {
     "ja": "水辺で外の空気を楽しむ",
     "zh-Hans": "到水边走走",
-    "fr": "Prendre l’air au bord de l’eau"
+    "fr": "Prendre l’air au bord de l’eau",
+    "ko": "물가에서 바람을 쐬어요"
   },
   "I'd prefer a K-pop setting if it fits.": {
     "ja": "できればK-popのセットで撮りたい。",
     "zh-Hans": "时间允许的话，我更喜欢 K-pop 布景。",
-    "fr": "Si possible, je préfère un décor de K-pop."
+    "fr": "Si possible, je préfère un décor de K-pop.",
+    "ko": "가능하면 K-pop 무대에서 찍고 싶어요."
   },
   "Describe it in your own words": {
     "ja": "自分の言葉で入力",
     "zh-Hans": "用自己的话描述",
-    "fr": "Décrivez votre envie"
+    "fr": "Décrivez votre envie",
+    "ko": "원하는 경험을 직접 적기"
   },
   "Your travel note · optional": {
     "ja": "旅行メモ（任意）",
     "zh-Hans": "旅行备注（选填）",
-    "fr": "Votre note de voyage · facultatif"
+    "fr": "Votre note de voyage · facultatif",
+    "ko": "여행 메모 · 선택 사항"
   },
   "We want a photo together, ideally on a K-pop set.": {
     "ja": "一緒に写真を撮りたいです。できればK-popのセットがいいです。",
     "zh-Hans": "我们想一起合影，最好是在 K-pop 布景里。",
-    "fr": "On aimerait une photo ensemble, si possible dans un décor de K-pop."
+    "fr": "On aimerait une photo ensemble, si possible dans un décor de K-pop.",
+    "ko": "함께 사진을 찍고 싶어요. 가능하면 K-pop 무대에서요."
   },
   "Only send your travel preference. An enabled note reader sends this text to OpenAI.": {
     "ja": "旅行の希望だけを入力してください。メモ読み取り機能が有効な場合、この文章をOpenAIに送信します。",
     "zh-Hans": "请只填写旅行偏好。启用解读功能后，这段文字会发送给 OpenAI。",
-    "fr": "Indiquez seulement vos préférences de visite. Si la lecture de notes est activée, ce texte est envoyé à OpenAI."
+    "fr": "Indiquez seulement vos préférences de visite. Si la lecture de notes est activée, ce texte est envoyé à OpenAI.",
+    "ko": "여행 중 하고 싶은 일만 적어 주세요. 메모 해석 기능을 사용하면 입력한 글이 OpenAI로 전송됩니다."
   },
   "Reading…": {
     "ja": "読み取り中…",
     "zh-Hans": "正在解读…",
-    "fr": "Lecture…"
+    "fr": "Lecture…",
+    "ko": "읽는 중…"
   },
   "Read my note": {
     "ja": "メモを読み取る",
     "zh-Hans": "解读我的备注",
-    "fr": "Lire ma note"
+    "fr": "Lire ma note",
+    "ko": "내 메모 읽기"
   },
   "Suggested goal · {0}": {
     "ja": "目標の候補：{0}",
     "zh-Hans": "建议目标：{0}",
-    "fr": "Objectif proposé · {0}"
+    "fr": "Objectif proposé · {0}",
+    "ko": "추천 목표 · {0}"
   },
   "K-pop setting preferred.": {
     "ja": "K-popのセットを希望。",
     "zh-Hans": "偏好 K-pop 布景。",
-    "fr": "Préférence pour un décor de K-pop."
+    "fr": "Préférence pour un décor de K-pop.",
+    "ko": "K-pop 무대를 선호해요."
   },
   "Step-free access requested.": {
     "ja": "段差のない経路を希望。",
     "zh-Hans": "需要无台阶路线。",
-    "fr": "Accès sans marches demandé."
+    "fr": "Accès sans marches demandé.",
+    "ko": "계단 없는 경로가 필요해요."
   },
   "Use this suggestion": {
     "ja": "この候補を使う",
     "zh-Hans": "采用此建议",
-    "fr": "Utiliser cette suggestion"
+    "fr": "Utiliser cette suggestion",
+    "ko": "이 제안 적용"
   },
   "Starting from": {
     "ja": "出発地点",
     "zh-Hans": "出发地点",
-    "fr": "Point de départ"
+    "fr": "Point de départ",
+    "ko": "출발 장소"
   },
   "I need to return to": {
     "ja": "戻る場所",
     "zh-Hans": "我要返回的地点",
-    "fr": "Lieu de retour"
+    "fr": "Lieu de retour",
+    "ko": "돌아올 장소"
   },
   "HiKR Ground entrance": {
     "ja": "HiKR Ground入口",
     "zh-Hans": "HiKR Ground 入口",
-    "fr": "Entrée de HiKR Ground"
+    "fr": "Entrée de HiKR Ground",
+    "ko": "하이커 그라운드 입구"
   },
   "HiKR Ground, floor 2": {
     "ja": "HiKR Ground 2階",
     "zh-Hans": "HiKR Ground 2楼",
-    "fr": "HiKR Ground, niveau 2"
+    "fr": "HiKR Ground, niveau 2",
+    "ko": "하이커 그라운드 2층"
   },
   "HiKR Ground, floor 3": {
     "ja": "HiKR Ground 3階",
     "zh-Hans": "HiKR Ground 3楼",
-    "fr": "HiKR Ground, niveau 3"
+    "fr": "HiKR Ground, niveau 3",
+    "ko": "하이커 그라운드 3층"
   },
   "Gwanggyo bridge entrance": {
     "ja": "広橋の入口",
     "zh-Hans": "广桥入口",
-    "fr": "Accès au pont Gwanggyo"
+    "fr": "Accès au pont Gwanggyo",
+    "ko": "광교 진입로"
   },
   "When do you need to be back?": {
     "ja": "いつまでに戻りますか？",
     "zh-Hans": "你需要在什么时候返回？",
-    "fr": "Quand devez-vous être de retour ?"
+    "fr": "Quand devez-vous être de retour ?",
+    "ko": "언제까지 돌아와야 하나요?"
   },
   "{0} min": {
     "ja": "{0}分",
     "zh-Hans": "{0}分钟",
-    "fr": "{0} min"
+    "fr": "{0} min",
+    "ko": "{0}분"
   },
   "Set a time": {
     "ja": "時刻を指定",
     "zh-Hans": "指定时间",
-    "fr": "Choisir une heure"
+    "fr": "Choisir une heure",
+    "ko": "시각 지정"
   },
   "Return time in Seoul": {
     "ja": "戻る時刻（ソウル時間）",
     "zh-Hans": "返回时间（首尔时间）",
-    "fr": "Heure de retour à Séoul"
+    "fr": "Heure de retour à Séoul",
+    "ko": "돌아올 시각 (서울 시간)"
   },
   "I need a step-free route.": {
     "ja": "段差のない経路が必要です。",
     "zh-Hans": "我需要无台阶路线。",
-    "fr": "J’ai besoin d’un trajet sans marches."
+    "fr": "J’ai besoin d’un trajet sans marches.",
+    "ko": "계단 없는 경로가 필요해요."
   },
   "Checking your plan…": {
     "ja": "確認中…",
     "zh-Hans": "正在检查计划…",
-    "fr": "Vérification…"
+    "fr": "Vérification…",
+    "ko": "일정 확인 중…"
   },
   "Find my next move": {
     "ja": "次にできることを探す",
     "zh-Hans": "看看接下来能做什么",
-    "fr": "Trouver ma prochaine activité"
+    "fr": "Trouver ma prochaine activité",
+    "ko": "다음에 할 일 찾기"
   },
   "Back to my current plan": {
     "ja": "現在のプランに戻る",
     "zh-Hans": "返回当前计划",
-    "fr": "Revenir à mon programme"
+    "fr": "Revenir à mon programme",
+    "ko": "내 일정으로 돌아가기"
   },
   "Try the 14:50 demo": {
     "ja": "14:50のデモを試す",
     "zh-Hans": "体验 14:50 的演示",
-    "fr": "Essayer la démo de 14:50"
+    "fr": "Essayer la démo de 14:50",
+    "ko": "14:50 시연 해보기"
   },
   "Demo · 14:50 Seoul": {
     "ja": "デモ · ソウル 14:50",
     "zh-Hans": "演示 · 首尔 14:50",
-    "fr": "Démo · 14:50 à Séoul"
+    "fr": "Démo · 14:50 à Séoul",
+    "ko": "시연 · 서울 14:50"
   },
   "Your next move": {
     "ja": "次にできること",
     "zh-Hans": "你的下一步",
-    "fr": "Votre prochaine activité"
+    "fr": "Votre prochaine activité",
+    "ko": "다음에 할 일"
   },
   "Edit plan": {
     "ja": "プランを編集",
     "zh-Hans": "修改计划",
-    "fr": "Modifier le programme"
+    "fr": "Modifier le programme",
+    "ko": "일정 수정"
   },
   "{0} min left": {
     "ja": "残り{0}分",
     "zh-Hans": "还剩{0}分钟",
-    "fr": "Encore {0} min"
+    "fr": "Encore {0} min",
+    "ko": "{0}분 남음"
   },
   "Back at {0} by {1}, Seoul time.": {
     "ja": "ソウル時間{1}までに{0}に戻ります。",
     "zh-Hans": "请在首尔时间{1}前回到{0}。",
-    "fr": "Retour à {0} avant {1}, heure de Séoul."
+    "fr": "Retour à {0} avant {1}, heure de Séoul.",
+    "ko": "서울 시간 {1}까지 {0}에 돌아와야 해요."
   },
   "Why your plan changed": {
     "ja": "プランが変わった理由",
     "zh-Hans": "计划调整的原因",
-    "fr": "Pourquoi le programme change"
+    "fr": "Pourquoi le programme change",
+    "ko": "일정이 바뀐 이유"
   },
   "Fits your estimates": {
     "ja": "見積もり時間内",
     "zh-Hans": "按你的估算来得及",
-    "fr": "Compatible avec vos estimations"
+    "fr": "Compatible avec vos estimations",
+    "ko": "예상 시간 안에 가능"
   },
   "Check on site": {
     "ja": "現地で要確認",
     "zh-Hans": "需现场确认",
-    "fr": "À vérifier sur place"
+    "fr": "À vérifier sur place",
+    "ko": "현장에서 확인"
   },
   "Estimated return · {0}": {
     "ja": "戻る時刻の目安 · {0}",
     "zh-Hans": "预计返回 · {0}",
-    "fr": "Retour estimé · {0}"
+    "fr": "Retour estimé · {0}",
+    "ko": "예상 복귀 시각 · {0}"
   },
   "Timing to confirm": {
     "ja": "所要時間を要確認",
     "zh-Hans": "所需时间待确认",
-    "fr": "Durée à confirmer"
+    "fr": "Durée à confirmer",
+    "ko": "소요 시간 확인 필요"
   },
   "Ask staff": {
     "ja": "スタッフに聞く",
     "zh-Hans": "询问工作人员",
-    "fr": "Demander au personnel"
+    "fr": "Demander au personnel",
+    "ko": "직원에게 물어보기"
   },
   "Show this to staff": {
     "ja": "スタッフにこの文を見せてください",
     "zh-Hans": "请向工作人员出示这句话",
-    "fr": "À montrer au personnel"
+    "fr": "À montrer au personnel",
+    "ko": "직원에게 이 문장을 보여 주세요"
   },
   "Long wait": {
     "ja": "待ち時間が長い",
     "zh-Hans": "排队时间太长",
-    "fr": "Longue attente"
+    "fr": "Longue attente",
+    "ko": "대기가 길어요"
   },
   "Skip this activity": {
     "ja": "この体験をスキップ",
     "zh-Hans": "跳过此活动",
-    "fr": "Passer cette activité"
+    "fr": "Passer cette activité",
+    "ko": "이 체험 건너뛰기"
   },
   "Closed": {
     "ja": "利用休止",
     "zh-Hans": "已关闭",
-    "fr": "Fermé"
+    "fr": "Fermé",
+    "ko": "운영 중단"
   },
   "What wait were you told?": {
     "ja": "待ち時間は何分と言われましたか？",
     "zh-Hans": "工作人员说要等多久？",
-    "fr": "Quel délai vous a-t-on annoncé ?"
+    "fr": "Quel délai vous a-t-on annoncé ?",
+    "ko": "얼마나 기다려야 한다고 들었나요?"
   },
   "Not sure": {
     "ja": "不明",
     "zh-Hans": "不确定",
-    "fr": "Je ne sais pas"
+    "fr": "Je ne sais pas",
+    "ko": "잘 모르겠어요"
   },
   "What is closed?": {
     "ja": "どこが休止中ですか？",
     "zh-Hans": "哪里关闭了？",
-    "fr": "Qu’est-ce qui est fermé ?"
+    "fr": "Qu’est-ce qui est fermé ?",
+    "ko": "어디가 문을 닫았나요?"
   },
   "Just this activity": {
     "ja": "この体験のみ",
     "zh-Hans": "仅此活动",
-    "fr": "Cette activité seulement"
+    "fr": "Cette activité seulement",
+    "ko": "이 체험만"
   },
   "All of HiKR Ground": {
     "ja": "HiKR Ground全館",
     "zh-Hans": "整个 HiKR Ground",
-    "fr": "Tout HiKR Ground"
+    "fr": "Tout HiKR Ground",
+    "ko": "하이커 그라운드 전체"
   },
   "The stream area": {
     "ja": "川沿いのエリア",
     "zh-Hans": "溪流区域",
-    "fr": "Le secteur du ruisseau"
+    "fr": "Le secteur du ruisseau",
+    "ko": "청계천 구간"
   },
   "Get there": {
     "ja": "行きの移動",
     "zh-Hans": "去程",
-    "fr": "Trajet aller"
+    "fr": "Trajet aller",
+    "ko": "가는 시간"
   },
   "Wait": {
     "ja": "待ち時間",
     "zh-Hans": "等候",
-    "fr": "Attente"
+    "fr": "Attente",
+    "ko": "기다리는 시간"
   },
   "Do the activity": {
     "ja": "体験時間",
     "zh-Hans": "体验活动",
-    "fr": "Activité"
+    "fr": "Activité",
+    "ko": "체험 시간"
   },
   "Return to meeting point": {
     "ja": "集合場所まで戻る",
     "zh-Hans": "返回集合点",
-    "fr": "Retour au rendez-vous"
+    "fr": "Retour au rendez-vous",
+    "ko": "약속 장소로 돌아오는 시간"
   },
   "I checked the timing": {
     "ja": "所要時間を確認した",
     "zh-Hans": "我已核实用时",
-    "fr": "J’ai vérifié les durées"
+    "fr": "J’ai vérifié les durées",
+    "ko": "소요 시간을 확인했어요"
   },
   "Enter today's estimates in minutes. Include all four parts.": {
     "ja": "今日の見積もりを4項目すべて分単位で入力してください。",
     "zh-Hans": "请填写今天四个环节的预计用时，单位为分钟。",
-    "fr": "Indiquez en minutes vos estimations du jour pour les quatre étapes."
+    "fr": "Indiquez en minutes vos estimations du jour pour les quatre étapes.",
+    "ko": "오늘 예상되는 시간을 네 항목 모두 분 단위로 입력해 주세요."
   },
   "I checked that this activity is available.": {
     "ja": "この体験が利用できることを確認しました。",
     "zh-Hans": "我已确认可以参加该活动。",
-    "fr": "J’ai vérifié que l’activité est disponible."
+    "fr": "J’ai vérifié que l’activité est disponible.",
+    "ko": "지금 이 체험을 할 수 있는지 확인했어요."
   },
   "The complete route is step-free.": {
     "ja": "往復とも段差がありません。",
     "zh-Hans": "整段路线都没有台阶。",
-    "fr": "Le trajet entier est sans marches."
+    "fr": "Le trajet entier est sans marches.",
+    "ko": "왕복 경로 전체에 계단이 없어요."
   },
   "Check my return time": {
     "ja": "戻る時刻を確認",
     "zh-Hans": "核对返回时间",
-    "fr": "Vérifier mon heure de retour"
+    "fr": "Vérifier mon heure de retour",
+    "ko": "복귀 시각 확인"
   },
   "Access notices": {
     "ja": "通行のお知らせ",
     "zh-Hans": "通行公告",
-    "fr": "Avis d’accès"
+    "fr": "Avis d’accès",
+    "ko": "통행 안내"
   },
   "Published hours": {
     "ja": "公式の開館時間",
     "zh-Hans": "公布的开放时间",
-    "fr": "Horaires officiels"
+    "fr": "Horaires officiels",
+    "ko": "공식 운영시간"
   },
   "Time to head back": {
     "ja": "戻る時間です",
     "zh-Hans": "该返回了",
-    "fr": "Il est temps de rentrer"
+    "fr": "Il est temps de rentrer",
+    "ko": "돌아갈 시간이에요"
   },
   "No match for this goal": {
     "ja": "この目標に合う候補はありません",
     "zh-Hans": "没有符合此目标的活动",
-    "fr": "Aucune activité pour cet objectif"
+    "fr": "Aucune activité pour cet objectif",
+    "ko": "조건에 맞는 체험이 없어요"
   },
   "Your planned return time has arrived.": {
     "ja": "予定の復帰時刻になりました。",
     "zh-Hans": "已到预定返回时间。",
-    "fr": "L’heure prévue pour votre retour est arrivée."
+    "fr": "L’heure prévue pour votre retour est arrivée.",
+    "ko": "약속한 복귀 시각이 됐어요."
   },
   "The reviewed activities cannot meet the goal and constraints you selected.": {
     "ja": "確認済みの体験には、選んだ目標と条件に合うものがありません。",
     "zh-Hans": "已核查的活动均无法满足所选目标和条件。",
-    "fr": "Aucune des activités examinées ne répond à votre objectif et à vos contraintes."
+    "fr": "Aucune des activités examinées ne répond à votre objectif et à vos contraintes.",
+    "ko": "확인한 체험 중에는 선택한 목표와 조건을 모두 충족하는 곳이 없어요."
   },
   "Find the meeting place": {
     "ja": "集合場所を探す",
     "zh-Hans": "查找集合地点",
-    "fr": "Trouver le lieu de rendez-vous"
+    "fr": "Trouver le lieu de rendez-vous",
+    "ko": "약속 장소 찾기"
   },
   "Meet at {0}. The map opens the location search.": {
     "ja": "集合場所は{0}です。地図で場所を検索できます。",
     "zh-Hans": "集合地点为{0}。打开地图可搜索该地点。",
-    "fr": "Rendez-vous à {0}. La carte permet de rechercher ce lieu."
+    "fr": "Rendez-vous à {0}. La carte permet de rechercher ce lieu.",
+    "ko": "약속 장소는 {0}입니다. 지도를 열면 이 장소를 검색해요."
   },
   "My timing reports": {
     "ja": "入力した所要時間",
     "zh-Hans": "我的用时记录",
-    "fr": "Mes relevés de durée"
+    "fr": "Mes relevés de durée",
+    "ko": "내가 기록한 시간"
   },
   "2F K-pop stage": {
     "ja": "2階 K-popステージ",
     "zh-Hans": "2楼 K-pop 舞台",
-    "fr": "Scène K-pop, niveau 2"
+    "fr": "Scène K-pop, niveau 2",
+    "ko": "2층 K-pop 무대"
   },
   "3F photo spot": {
     "ja": "3階 撮影スポット",
     "zh-Hans": "3楼拍照点",
-    "fr": "Coin photo, niveau 3"
+    "fr": "Coin photo, niveau 3",
+    "ko": "3층 포토존"
   },
   "Gwanggyo stream entrance": {
     "ja": "広橋の川沿い入口",
     "zh-Hans": "广桥溪边入口",
-    "fr": "Accès au ruisseau à Gwanggyo"
+    "fr": "Accès au ruisseau à Gwanggyo",
+    "ko": "광교 청계천 진입로"
   },
   "{0} · {1} Seoul": {
     "ja": "{0} · ソウル {1}",
     "zh-Hans": "{0} · 首尔 {1}",
-    "fr": "{0} · {1} à Séoul"
+    "fr": "{0} · {1} à Séoul",
+    "ko": "{0} · 서울 시간 {1}"
   },
   "Go {0} + wait {1} + activity {2} + return {3} min.": {
     "ja": "行き{0}分＋待ち{1}分＋体験{2}分＋帰り{3}分。",
     "zh-Hans": "去程{0}分钟＋等候{1}分钟＋活动{2}分钟＋返程{3}分钟。",
-    "fr": "Aller {0} + attente {1} + activité {2} + retour {3} min."
+    "fr": "Aller {0} + attente {1} + activité {2} + retour {3} min.",
+    "ko": "가는 길 {0}분 + 대기 {1}분 + 체험 {2}분 + 돌아오는 길 {3}분"
   },
   "Reported wait: {0} min.": {
     "ja": "申告した待ち時間：{0}分。",
     "zh-Hans": "记录的等候时间：{0}分钟。",
-    "fr": "Attente annoncée : {0} min."
+    "fr": "Attente annoncée : {0} min.",
+    "ko": "기록한 대기 시간은 {0}분이에요."
   },
   "Wait unknown.": {
     "ja": "待ち時間は不明です。",
     "zh-Hans": "等候时间未知。",
-    "fr": "Attente inconnue."
+    "fr": "Attente inconnue.",
+    "ko": "대기 시간을 아직 몰라요."
   },
   "New wait in minutes": {
     "ja": "新しい待ち時間（分）",
     "zh-Hans": "新的等候时间（分钟）",
-    "fr": "Nouvelle attente en minutes"
+    "fr": "Nouvelle attente en minutes",
+    "ko": "새 대기 시간 (분)"
   },
   "New wait for {0}": {
     "ja": "{0}の新しい待ち時間",
     "zh-Hans": "{0}的新等候时间",
-    "fr": "Nouvelle attente pour {0}"
+    "fr": "Nouvelle attente pour {0}",
+    "ko": "{0}의 새 대기 시간"
   },
   "Update wait": {
     "ja": "待ち時間を更新",
     "zh-Hans": "更新等候时间",
-    "fr": "Modifier l’attente"
+    "fr": "Modifier l’attente",
+    "ko": "대기 시간 수정"
   },
   "Undo last change": {
     "ja": "直前の変更を取り消す",
     "zh-Hans": "撤销上次更改",
-    "fr": "Annuler la dernière modification"
+    "fr": "Annuler la dernière modification",
+    "ko": "마지막 변경 취소"
   },
   "End trip": {
     "ja": "旅行を終了",
     "zh-Hans": "结束行程",
-    "fr": "Terminer la visite"
+    "fr": "Terminer la visite",
+    "ko": "여행 종료"
   },
   "HiKR Ground · 2F": {
     "ja": "HiKR Ground · 2階",
     "zh-Hans": "HiKR Ground · 2楼",
-    "fr": "HiKR Ground · Niveau 2"
+    "fr": "HiKR Ground · Niveau 2",
+    "ko": "하이커 그라운드 · 2층"
   },
   "Make a K-pop stage video": {
     "ja": "K-popステージで動画撮影",
     "zh-Hans": "拍摄 K-pop 舞台视频",
-    "fr": "Filmer une vidéo sur la scène K-pop"
+    "fr": "Filmer une vidéo sur la scène K-pop",
+    "ko": "K-pop 무대에서 영상 찍기"
   },
   "Choose a set on the second floor and record a short performance together.": {
     "ja": "2階のセットを選び、一緒に短いパフォーマンスを撮影しましょう。",
     "zh-Hans": "在2楼挑选布景，一起录一段简短的表演。",
-    "fr": "Choisissez un décor au niveau 2 et filmez une courte prestation ensemble."
+    "fr": "Choisissez un décor au niveau 2 et filmez une courte prestation ensemble.",
+    "ko": "2층에서 마음에 드는 세트를 골라 함께 짧은 공연 영상을 찍어 보세요."
   },
   "Is the second-floor stage available now? How long is the wait to film?": {
     "ja": "今、2階のステージで撮影できますか？待ち時間はどれくらいですか？",
     "zh-Hans": "现在可以在2楼舞台拍摄吗？需要等多久？",
-    "fr": "Peut-on filmer sur la scène du niveau 2 maintenant ? Combien de temps faut-il attendre ?"
+    "fr": "Peut-on filmer sur la scène du niveau 2 maintenant ? Combien de temps faut-il attendre ?",
+    "ko": "지금 2층 무대에서 촬영할 수 있나요? 얼마나 기다려야 하나요?"
   },
   "Korea Tourism Organization": {
     "ja": "韓国観光公社",
     "zh-Hans": "韩国旅游发展局",
-    "fr": "Office national du tourisme de Corée"
+    "fr": "Office national du tourisme de Corée",
+    "ko": "한국관광공사"
   },
   "HiKR Ground · 3F": {
     "ja": "HiKR Ground · 3階",
     "zh-Hans": "HiKR Ground · 3楼",
-    "fr": "HiKR Ground · Niveau 3"
+    "fr": "HiKR Ground · Niveau 3",
+    "ko": "하이커 그라운드 · 3층"
   },
   "Take a photo at HiKR Street": {
     "ja": "HiKR Streetで記念撮影",
     "zh-Hans": "在 HiKR Street 合影",
-    "fr": "Prendre une photo à HiKR Street"
+    "fr": "Prendre une photo à HiKR Street",
+    "ko": "하이커 스트리트에서 사진 찍기"
   },
   "The third-floor street set has a replica bus stop where you can take a photo together.": {
     "ja": "3階の街並みセットにはバス停のレプリカがあり、一緒に写真を撮れます。",
     "zh-Hans": "3楼的街景布置里有一个仿真公交站，可以一起合影。",
-    "fr": "Le décor de rue du niveau 3 comprend un arrêt de bus reconstitué où vous pouvez poser ensemble."
+    "fr": "Le décor de rue du niveau 3 comprend un arrêt de bus reconstitué où vous pouvez poser ensemble.",
+    "ko": "3층 거리 세트에는 함께 사진을 찍을 수 있는 버스 정류장 포토존이 있어요."
   },
   "Can we use the bus-stop photo spot on the third floor now? Is there a wait?": {
     "ja": "今、3階のバス停の撮影スポットを利用できますか？待ち時間はありますか？",
     "zh-Hans": "现在可以在3楼的公交站拍照点拍照吗？需要排队吗？",
-    "fr": "Peut-on prendre des photos à l’arrêt de bus du niveau 3 maintenant ? Y a-t-il de l’attente ?"
+    "fr": "Peut-on prendre des photos à l’arrêt de bus du niveau 3 maintenant ? Y a-t-il de l’attente ?",
+    "ko": "지금 3층 버스 정류장 포토존에서 사진을 찍을 수 있나요? 대기가 있나요?"
   },
   "Seoul Metropolitan Government": {
     "ja": "ソウル特別市",
     "zh-Hans": "首尔特别市政府",
-    "fr": "Ville de Séoul"
+    "fr": "Ville de Séoul",
+    "ko": "서울특별시"
   },
   "Cheonggyecheon · Gwanggyo": {
     "ja": "清渓川 · 広橋",
     "zh-Hans": "清溪川 · 广桥",
-    "fr": "Cheonggyecheon · Gwanggyo"
+    "fr": "Cheonggyecheon · Gwanggyo",
+    "ko": "청계천 · 광교"
   },
   "Walk beside Cheonggyecheon": {
     "ja": "清渓川沿いを散歩",
     "zh-Hans": "沿清溪川散步",
-    "fr": "Se promener le long du Cheonggyecheon"
+    "fr": "Se promener le long du Cheonggyecheon",
+    "ko": "청계천 따라 산책하기"
   },
   "Use the Gwanggyo stair entrance for a short walk by the water. Check stream access before going down.": {
     "ja": "広橋の階段から水辺の散歩へ。降りる前に通行可能か確認してください。",
     "zh-Hans": "从广桥的阶梯入口下去，沿水边短暂散步。下去前请确认能否通行。",
-    "fr": "Prenez l’escalier de Gwanggyo pour une courte balade au bord de l’eau. Vérifiez l’accès avant de descendre."
+    "fr": "Prenez l’escalier de Gwanggyo pour une courte balade au bord de l’eau. Vérifiez l’accès avant de descendre.",
+    "ko": "광교 계단으로 내려가 물가를 잠깐 걸어 보세요. 내려가기 전에 통행이 가능한지 확인해 주세요."
   },
   "Is the Gwanggyo stair entrance to the stream open today?": {
     "ja": "今日、広橋の階段から清渓川に降りられますか？",
     "zh-Hans": "今天能从广桥的阶梯入口下到清溪川吗？",
-    "fr": "L’escalier de Gwanggyo qui descend au ruisseau est-il ouvert aujourd’hui ?"
+    "fr": "L’escalier de Gwanggyo qui descend au ruisseau est-il ouvert aujourd’hui ?",
+    "ko": "오늘 광교 계단을 통해 청계천으로 내려갈 수 있나요?"
   },
   "Seoul Facilities Corporation": {
     "ja": "ソウル施設公団",
     "zh-Hans": "首尔设施公团",
-    "fr": "Service des équipements de Séoul"
+    "fr": "Service des équipements de Séoul",
+    "ko": "서울시설공단"
   },
   "The reviewed Gwanggyo entrance has stairs.": {
     "ja": "確認した広橋の入口には階段があります。",
     "zh-Hans": "已核查的广桥入口有台阶。",
-    "fr": "L’accès examiné à Gwanggyo comporte des marches."
+    "fr": "L’accès examiné à Gwanggyo comporte des marches.",
+    "ko": "확인한 광교 진입로에는 계단이 있어요."
   },
   "It does not meet the experience you chose.": {
     "ja": "選んだ体験に合いません。",
     "zh-Hans": "与所选体验不符。",
-    "fr": "Cette activité ne correspond pas à votre objectif."
+    "fr": "Cette activité ne correspond pas à votre objectif.",
+    "ko": "선택한 경험과 맞지 않아요."
   },
   "You reported this whole venue closed.": {
     "ja": "施設全体が休館と入力されました。",
     "zh-Hans": "你报告了整个场馆关闭。",
-    "fr": "Vous avez signalé la fermeture de tout le site."
+    "fr": "Vous avez signalé la fermeture de tout le site.",
+    "ko": "시설 전체가 문을 닫았다고 입력했어요."
   },
   "You reported this activity closed.": {
     "ja": "この体験は休止中と入力されました。",
     "zh-Hans": "你报告了这项活动暂停。",
-    "fr": "Vous avez signalé la fermeture de cette activité."
+    "fr": "Vous avez signalé la fermeture de cette activité.",
+    "ko": "이 체험이 중단됐다고 입력했어요."
   },
   "You skipped this activity for this trip.": {
     "ja": "今回の旅行ではこの体験をスキップしました。",
     "zh-Hans": "这次行程中你已跳过此活动。",
-    "fr": "Vous avez écarté cette activité pour cette visite."
+    "fr": "Vous avez écarté cette activité pour cette visite.",
+    "ko": "이번 여행에서는 이 체험을 건너뛰기로 했어요."
   },
   "The published exhibition schedule is closed at this time.": {
     "ja": "公式日程によると現在は開館時間外です。",
     "zh-Hans": "按公布的展览时间，目前未开放。",
-    "fr": "D’après les horaires publiés, l’exposition est fermée à cette heure."
+    "fr": "D’après les horaires publiés, l’exposition est fermée à cette heure.",
+    "ko": "공식 전시 일정상 지금은 운영하지 않아요."
   },
   "The published last admission is 19:40.": {
     "ja": "公式の最終入場は19:40です。",
     "zh-Hans": "公布的最晚入场时间为19:40。",
-    "fr": "La dernière admission annoncée est à 19:40."
+    "fr": "La dernière admission annoncée est à 19:40.",
+    "ko": "공식 마지막 입장 시각은 19:40이에요."
   },
   "The reported wait ends at your {0} return, leaving no time for the activity.": {
     "ja": "待ち時間が終わるのは復帰時刻の{0}で、体験する時間がありません。",
     "zh-Hans": "排队结束时已到约定返回的{0}，没有时间体验。",
-    "fr": "L’attente se termine à {0}, l’heure de votre retour. Il ne reste pas de temps pour l’activité."
+    "fr": "L’attente se termine à {0}, l’heure de votre retour. Il ne reste pas de temps pour l’activité.",
+    "ko": "대기가 끝나는 {0}에 이미 돌아와야 해서 체험할 시간이 없어요."
   },
   "The reported wait puts the earliest start at {0}, past your {1} return.": {
     "ja": "最も早い開始は{0}で、復帰時刻の{1}を過ぎます。",
     "zh-Hans": "按报告的等候时间，最早要到{0}才能开始，已超过{1}的返回时间。",
-    "fr": "Avec l’attente annoncée, vous commencerez au plus tôt à {0}, après votre retour prévu à {1}."
+    "fr": "Avec l’attente annoncée, vous commencerez au plus tôt à {0}, après votre retour prévu à {1}.",
+    "ko": "들은 대기 시간대로라면 가장 빨라도 {0}에 시작해요. 돌아와야 할 {1}을 넘겨요."
   },
   "Your last timing is over 10 minutes old. Confirm the current timing on site.": {
     "ja": "前回の確認から10分以上経ちました。現地で時間を再確認してください。",
     "zh-Hans": "距上次确认已过10分钟，请在现场重新核对。",
-    "fr": "Votre relevé date d’au moins 10 minutes. Vérifiez les durées sur place."
+    "fr": "Votre relevé date d’au moins 10 minutes. Vérifiez les durées sur place.",
+    "ko": "마지막 확인 후 10분이 지났어요. 현장에서 소요 시간을 다시 확인해 주세요."
   },
   "The timing you entered runs outside published admission or closing hours.": {
     "ja": "入力した時間は公式の入場・閉館時間に合いません。",
     "zh-Hans": "输入的时间超出公布的入场或开放时段。",
-    "fr": "Les durées saisies dépassent l’heure limite d’entrée ou de fermeture."
+    "fr": "Les durées saisies dépassent l’heure limite d’entrée ou de fermeture.",
+    "ko": "입력한 시간으로는 공식 입장 또는 운영 시간을 맞출 수 없어요."
   },
   "Your travel, wait, activity and return estimates finish after {0}.": {
     "ja": "往路・待ち・体験・復路を合わせると{0}を過ぎます。",
     "zh-Hans": "去程、等候、活动和返程的总用时会让你在{0}之后才返回。",
-    "fr": "Selon vos estimations de trajet, d’attente et d’activité, le retour aurait lieu après {0}."
+    "fr": "Selon vos estimations de trajet, d’attente et d’activité, le retour aurait lieu après {0}.",
+    "ko": "이동·대기·체험·복귀 시간을 합치면 {0}을 넘겨요."
   },
   "Confirm a step-free route to this activity and back.": {
     "ja": "往復とも段差のない経路があるか確認してください。",
     "zh-Hans": "请确认往返全程均有无台阶路线。",
-    "fr": "Vérifiez que les trajets aller et retour sont sans marches."
+    "fr": "Vérifiez que les trajets aller et retour sont sans marches.",
+    "ko": "체험 장소까지 가고 돌아오는 길에 계단이 없는지 확인해 주세요."
   },
   "Your on-site estimates fit the return time.": {
     "ja": "現地で見積もった時間なら、約束に間に合います。",
     "zh-Hans": "按现场估算，可以按时返回。",
-    "fr": "D’après vos estimations sur place, vous serez de retour à temps."
+    "fr": "D’après vos estimations sur place, vous serez de retour à temps.",
+    "ko": "현장에서 확인한 시간대로라면 약속에 맞춰 돌아올 수 있어요."
   },
   "There is no time left for the activity before your return.": {
     "ja": "戻るまでに体験する時間がありません。",
     "zh-Hans": "返回前已没有时间参加活动。",
-    "fr": "Il ne reste pas de temps pour l’activité avant votre retour."
+    "fr": "Il ne reste pas de temps pour l’activité avant votre retour.",
+    "ko": "돌아오기 전에 체험할 시간이 남지 않았어요."
   },
   "The earliest start is at or after the published closing time.": {
     "ja": "開始できるのは公式の閉館時刻以降です。",
     "zh-Hans": "最早开始时间已到或超过公布的关闭时间。",
-    "fr": "L’activité commencerait au plus tôt à l’heure de fermeture ou après."
+    "fr": "L’activité commencerait au plus tôt à l’heure de fermeture ou après.",
+    "ko": "가장 빨리 시작해도 공식 운영 종료 시각이거나 그 이후예요."
   },
   "Check step-free access, current availability and return timing.": {
     "ja": "段差のない経路、現在の利用可否、復帰時間を確認してください。",
     "zh-Hans": "请核实无台阶通道、当前开放情况及返回用时。",
-    "fr": "Vérifiez l’accès sans marches, la disponibilité et la durée du retour."
+    "fr": "Vérifiez l’accès sans marches, la disponibilité et la durée du retour.",
+    "ko": "계단 없는 경로, 현재 이용 가능 여부, 복귀 시간을 확인해 주세요."
   },
   "Check the official stream notice and allow time to return.": {
     "ja": "川沿いの公式通行情報を確認し、戻る時間を確保してください。",
     "zh-Hans": "请查看溪流通行公告，并留出返回时间。",
-    "fr": "Consultez les avis officiels du ruisseau et prévoyez le temps du retour."
+    "fr": "Consultez les avis officiels du ruisseau et prévoyez le temps du retour.",
+    "ko": "청계천 공식 통행 안내를 확인하고 돌아올 시간을 남겨 두세요."
   },
   "Ask about the current wait and confirm your return timing.": {
     "ja": "今の待ち時間を聞き、戻る時間を確認してください。",
     "zh-Hans": "请询问当前等候时间，并核对返回用时。",
-    "fr": "Demandez le délai actuel et vérifiez vos horaires de retour."
+    "fr": "Demandez le délai actuel et vérifiez vos horaires de retour.",
+    "ko": "현재 대기 시간을 묻고 약속에 맞춰 돌아올 수 있는지 확인해 주세요."
   },
   "Wait recorded. Confirm travel, activity and return time.": {
     "ja": "待ち時間を記録しました。往路・体験・復路の時間を確認してください。",
     "zh-Hans": "已记录等候时间。请确认去程、活动及返程用时。",
-    "fr": "Attente enregistrée. Vérifiez les durées de l’aller, de l’activité et du retour."
+    "fr": "Attente enregistrée. Vérifiez les durées de l’aller, de l’activité et du retour.",
+    "ko": "대기 시간을 기록했어요. 이동·체험·복귀 시간도 확인해 주세요."
   },
   "Choose a return time within this Seoul day.": {
     "ja": "ソウル時間で今日中の復帰時刻を選んでください。",
     "zh-Hans": "请选择首尔当地时间今天之内的返回时间。",
-    "fr": "Choisissez une heure de retour avant la fin de la journée à Séoul."
+    "fr": "Choisissez une heure de retour avant la fin de la journée à Séoul.",
+    "ko": "서울 시간으로 오늘 안에 돌아올 시각을 선택해 주세요."
   },
   "Choose a return time for today in Seoul.": {
     "ja": "ソウル時間で今日の復帰時刻を選んでください。",
     "zh-Hans": "请选择首尔当地时间今天的返回时间。",
-    "fr": "Choisissez une heure de retour pour aujourd’hui à Séoul."
+    "fr": "Choisissez une heure de retour pour aujourd’hui à Séoul.",
+    "ko": "서울 시간으로 오늘 돌아올 시각을 선택해 주세요."
   },
   "Your return time has passed. Head back or edit your plan.": {
     "ja": "復帰時刻を過ぎました。戻るかプランを変更してください。",
     "zh-Hans": "返回时间已过，请返回或修改计划。",
-    "fr": "L’heure de retour est passée. Rentrez ou modifiez votre programme."
+    "fr": "L’heure de retour est passée. Rentrez ou modifiez votre programme.",
+    "ko": "복귀 시각이 지났어요. 약속 장소로 돌아가거나 일정을 수정해 주세요."
   },
   "The note reader is unavailable. Choose your goal below to keep going.": {
     "ja": "メモの読み取りを利用できません。下から目標を選んでください。",
     "zh-Hans": "备注解读暂不可用。请选择下方的目标继续。",
-    "fr": "La lecture de notes est indisponible. Choisissez un objectif ci-dessous pour continuer."
+    "fr": "La lecture de notes est indisponible. Choisissez un objectif ci-dessous pour continuer.",
+    "ko": "지금은 메모를 읽을 수 없어요. 아래에서 원하는 경험을 선택해 주세요."
   },
   "The note reader is busy. Choose your goal below.": {
     "ja": "メモ読み取りが混み合っています。下から目標を選んでください。",
     "zh-Hans": "备注解读服务繁忙。请从下方选择目标。",
-    "fr": "La lecture de notes est occupée. Choisissez un objectif ci-dessous."
+    "fr": "La lecture de notes est occupée. Choisissez un objectif ci-dessous.",
+    "ko": "메모 해석 요청이 많아요. 아래에서 원하는 경험을 선택해 주세요."
   },
   "Which experience matters most to you? Choose one below.": {
     "ja": "一番大切にしたい体験を下から選んでください。",
     "zh-Hans": "哪项体验对你最重要？请从下方选择。",
-    "fr": "Quelle expérience compte le plus pour vous ? Choisissez-en une ci-dessous."
+    "fr": "Quelle expérience compte le plus pour vous ? Choisissez-en une ci-dessous.",
+    "ko": "가장 중요한 경험이 무엇인가요? 아래에서 하나를 골라 주세요."
   },
   "Could not reach the note reader. Choose your goal below.": {
     "ja": "メモを読み取れませんでした。下から目標を選んでください。",
     "zh-Hans": "无法连接备注解读服务。请从下方选择目标。",
-    "fr": "Impossible de joindre le service de lecture. Choisissez un objectif ci-dessous."
+    "fr": "Impossible de joindre le service de lecture. Choisissez un objectif ci-dessous.",
+    "ko": "메모 해석 기능에 연결할 수 없어요. 아래에서 원하는 경험을 선택해 주세요."
   },
   "Applied. You can still change your choices below.": {
     "ja": "反映しました。下で選択を変更できます。",
     "zh-Hans": "已应用。你仍可在下方修改选择。",
-    "fr": "Suggestion appliquée. Vous pouvez encore modifier vos choix ci-dessous."
+    "fr": "Suggestion appliquée. Vous pouvez encore modifier vos choix ci-dessous.",
+    "ko": "적용했어요. 아래에서 선택을 바꿀 수 있어요."
   },
   "Connection lost. Your last plan is still here.": {
     "ja": "接続が切れました。直前のプランは保持されています。",
     "zh-Hans": "连接已断开。上次的计划仍保留在这里。",
-    "fr": "Connexion perdue. Votre dernier programme est conservé."
+    "fr": "Connexion perdue. Votre dernier programme est conservé.",
+    "ko": "연결이 끊겼어요. 마지막 일정은 그대로 있어요."
   },
   "The request failed. Please try again.": {
     "ja": "処理に失敗しました。もう一度お試しください。",
     "zh-Hans": "请求失败，请重试。",
-    "fr": "Échec de la demande. Veuillez réessayer."
+    "fr": "Échec de la demande. Veuillez réessayer.",
+    "ko": "요청을 처리하지 못했어요. 다시 시도해 주세요."
   },
   "Check the selected goal, place and timing.": {
     "ja": "目標・場所・時刻を確認してください。",
     "zh-Hans": "请核对所选目标、地点和时间。",
-    "fr": "Vérifiez l’objectif, le lieu et l’horaire choisis."
+    "fr": "Vérifiez l’objectif, le lieu et l’horaire choisis.",
+    "ko": "선택한 목표와 장소, 시간을 확인해 주세요."
   },
   "We could not evaluate this plan. Please try again.": {
     "ja": "プランを確認できませんでした。もう一度お試しください。",
     "zh-Hans": "无法评估此计划，请重试。",
-    "fr": "Impossible d’évaluer ce programme. Veuillez réessayer."
+    "fr": "Impossible d’évaluer ce programme. Veuillez réessayer.",
+    "ko": "일정을 확인하지 못했어요. 다시 시도해 주세요."
   },
   "Request is too large.": {
     "ja": "入力が長すぎます。",
     "zh-Hans": "输入内容过长。",
-    "fr": "La demande est trop volumineuse."
+    "fr": "La demande est trop volumineuse.",
+    "ko": "입력 내용이 너무 길어요."
   },
   "Request body is missing.": {
     "ja": "リクエストの内容がありません。",
     "zh-Hans": "请求内容为空。",
-    "fr": "Le contenu de la demande est manquant."
+    "fr": "Le contenu de la demande est manquant.",
+    "ko": "요청 내용이 비어 있어요."
   },
   "Send JSON.": {
     "ja": "JSON形式で送信してください。",
     "zh-Hans": "请发送 JSON 格式的数据。",
-    "fr": "Envoyez les données au format JSON."
+    "fr": "Envoyez les données au format JSON.",
+    "ko": "JSON 형식으로 보내 주세요."
   },
   "The JSON could not be read.": {
     "ja": "JSONを読み取れませんでした。",
     "zh-Hans": "无法读取 JSON。",
-    "fr": "Les données JSON sont illisibles."
+    "fr": "Les données JSON sont illisibles.",
+    "ko": "JSON 데이터를 읽을 수 없어요."
   },
   "Step {0} of 2": {
     "ja": "ステップ {0} / 2",
     "zh-Hans": "第 {0} 步，共 2 步",
-    "fr": "Étape {0} sur 2"
+    "fr": "Étape {0} sur 2",
+    "ko": "{0}/2단계"
   },
   "Plan your return": {
     "ja": "戻る場所と時間",
     "zh-Hans": "设定返回地点和时间",
-    "fr": "Préparez votre retour"
+    "fr": "Préparez votre retour",
+    "ko": "돌아올 장소와 시간"
   },
   "Choose return details": {
     "ja": "戻る場所と時間を選ぶ",
     "zh-Hans": "选择返回地点和时间",
-    "fr": "Choisir le lieu et l’heure du retour"
+    "fr": "Choisir le lieu et l’heure du retour",
+    "ko": "복귀 장소와 시간 선택"
   },
   "Back": {
     "ja": "戻る",
     "zh-Hans": "上一步",
-    "fr": "Retour"
+    "fr": "Retour",
+    "ko": "이전"
   }
 }

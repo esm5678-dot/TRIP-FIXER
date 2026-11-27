@@ -3,13 +3,15 @@ import { createContext, useContext } from "react";
 import messages from "../data/translations.json";
 
 export const languages = {
+  ko: "한국어",
   en: "English",
   ja: "日本語",
   "zh-Hans": "简体中文",
   fr: "Français",
 } as const;
 export type Language = keyof typeof languages;
-export const LanguageContext = createContext<Language>("en");
+export const defaultLanguage: Language = "ko";
+export const LanguageContext = createContext<Language>(defaultLanguage);
 export function useText() {
   const language = useContext(LanguageContext);
   return (key: string, ...values: (string | number)[]) => {

@@ -730,7 +730,7 @@ textarea {
 .mast-tools { gap: 1rem; }
 .language { font-size: .85rem; }
 .language select { width: auto; min-height: 40px; padding: .35rem .5rem; font: inherit; }
-:lang(ja) h1, :lang(zh-Hans) h1 { line-height: 1.2; letter-spacing: -.025em; }
+:lang(ko) h1, :lang(ja) h1, :lang(zh-Hans) h1 { line-height: 1.2; letter-spacing: -.025em; }
 @media (max-width: 700px) { .mast-tools .mast-location { display: none; } .language { gap: .25rem; } }
 
 @media (max-width: 780px) {
