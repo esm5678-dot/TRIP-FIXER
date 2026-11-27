@@ -732,3 +732,53 @@ textarea {
 .language select { width: auto; min-height: 40px; padding: .35rem .5rem; font: inherit; }
 :lang(ja) h1, :lang(zh-Hans) h1 { line-height: 1.2; letter-spacing: -.025em; }
 @media (max-width: 700px) { .mast-tools .mast-location { display: none; } .language { gap: .25rem; } }
+
+@media (max-width: 780px) {
+  .shell {
+    padding: 0 max(14px, env(safe-area-inset-right)) env(safe-area-inset-bottom) max(14px, env(safe-area-inset-left));
+  }
+  .mast { min-height: 58px; height: auto; gap: 8px; }
+  .language select { margin: 0; min-height: 44px; font-size: 16px; }
+  .mast-tools .mast-location { display: none; }
+  .main-grid { margin: 12px 0 24px; }
+  .intro { padding: 0; }
+  .intro .area, .intro .lead { display: none; }
+  .intro h1 { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); margin: 0; }
+  .panel { padding: clamp(15px, 4vw, 22px); border-radius: 16px; }
+  .panel-heading { margin-bottom: 15px; }
+  .panel h2 { font-size: clamp(27px, 7.4vw, 35px); line-height: 1.12; }
+  .step-meter { display: flex; gap: 5px; margin: 0 0 14px; }
+  .step-meter i { flex: 1; height: 3px; background: var(--line); border-radius: 4px; }
+  .step-meter i:first-child, .step-meter[data-step="2"] i { background: var(--forest); }
+  .goal { min-height: 61px; gap: 12px; border-radius: 10px; }
+  .goal strong { font-size: 16px; }
+  .goal small { font-size: 13px; }
+  .radio-mark, .goal > svg, .actions svg { flex-shrink: 0; }
+  .setup .field-grid { grid-template-columns: 1fr; gap: 14px; }
+  .field-grid > *, .segments > *, .step-actions > * { min-width: 0; }
+  .input-label, legend { font-size: 14px; }
+  .check { min-height: 44px; margin: 6px 0; font-size: 14px; }
+  .check input { width: 20px; height: 20px; }
+  .note { margin: 8px 0 12px; padding: 2px 0; }
+  .note summary, .text-button, .icon-text, .demo-link, .report .text-button, .sources a, .error button { min-height: 44px; }
+  .note summary { font-size: 14px; }
+  .input-label select, .input-label input:not([type="checkbox"]), textarea { min-height: 46px; font-size: 16px; }
+  .segments { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .segments button { min-height: 44px; font-size: 14px; }
+  .step-actions { display: flex; gap: 8px; margin-top: 14px; }
+  .step-back { border: 1px solid var(--line); border-radius: 9px; background: var(--cream); padding: 8px 12px; font-weight: 650; }
+  .primary, .secondary { min-height: 49px; border-radius: 9px; font-size: 16px; }
+  .result-head { gap: 7px; }
+  .receipt { margin-top: 6px; gap: 5px 15px; }
+  .meeting { padding: 8px 10px; border-left: 3px solid #52795f; background: #eef3e8; font-size: 14px; }
+  .actions { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .actions button { min-height: 46px; font-size: 14px; }
+  .actions button:first-child { grid-column: 1 / -1; }
+  .staff p { font-size: 21px; line-height: 1.5; }
+  .result-footer { flex-wrap: wrap; }
+  .report form { flex-wrap: wrap; }
+  .page-footer { align-items: center; }
+}
+@media (max-width: 360px) {
+  .language span { position: absolute; width: 1px; height: 1px; clip-path: inset(50%); overflow: hidden; }
+}

@@ -748,5 +748,25 @@
     "ja": "JSONを読み取れませんでした。",
     "zh-Hans": "无法读取 JSON。",
     "fr": "Les données JSON sont illisibles."
+  },
+  "Step {0} of 2": {
+    "ja": "ステップ {0} / 2",
+    "zh-Hans": "第 {0} 步，共 2 步",
+    "fr": "Étape {0} sur 2"
+  },
+  "Plan your return": {
+    "ja": "戻る場所と時間",
+    "zh-Hans": "设定返回地点和时间",
+    "fr": "Préparez votre retour"
+  },
+  "Choose return details": {
+    "ja": "戻る場所と時間を選ぶ",
+    "zh-Hans": "选择返回地点和时间",
+    "fr": "Choisir le lieu et l’heure du retour"
+  },
+  "Back": {
+    "ja": "戻る",
+    "zh-Hans": "上一步",
+    "fr": "Retour"
   }
 }
